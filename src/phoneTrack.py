@@ -47,7 +47,7 @@ os.chdir("/Users/adminuser/Desktop/Research Code/Touch-Dynamics-Research/pubg_ra
 log_file = open("raw_data_now", "r")
 data = log_file.readlines()
 # Open CSV File and Writer
-csv_file = open("pubg7_touch.csv", 'w', newline='')
+csv_file = open("pubg8_touch.csv", 'w', newline='')
 csv_writer = csv.writer(csv_file)
 header = ['Timestamp', 'X', 'Y', 'BTN_TOUCH', 'WIDTH_MAJOR',
           'WIDTH_MINOR', 'ORIENTATION', 'PRESSURE', 'FINGER']
@@ -160,8 +160,4 @@ print()
 
 # Upload to One-Drive Account.
 
-<<<<<<< HEAD:phoneTrack.py
 # Profit.
-=======
-#Profit.
->>>>>>> c4b50f8d3c99891baf8cb092d73fa303c7797a51:src/phoneTrack.py
