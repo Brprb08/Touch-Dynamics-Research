@@ -150,4 +150,8 @@ def main():
 if __name__ == '__main__':
     main()
 
+<<<<<<< HEAD:preprocess.py
 # The TouchMajor and TouchMinor fields describe the approximate dimensions of the contact area in output units (pixels).
+=======
+#The TouchMajor and TouchMinor fields describe the approximate dimensions of the contact area in output units (pixels).
+>>>>>>> c4b50f8d3c99891baf8cb092d73fa303c7797a51:src/preprocess.py

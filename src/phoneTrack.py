@@ -160,4 +160,8 @@ print()
 
 # Upload to One-Drive Account.
 
+<<<<<<< HEAD:phoneTrack.py
 # Profit.
+=======
+#Profit.
+>>>>>>> c4b50f8d3c99891baf8cb092d73fa303c7797a51:src/phoneTrack.py
