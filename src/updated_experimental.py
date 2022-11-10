@@ -296,6 +296,67 @@ def ml_process(df, target):
 	y = np.array(y)
 	return X, y
 
+
+# NEW ALGORITHMS HERE (NEURAL NETWORKS, SVC, )
+#-------------------------------------------------------------------------------
+
+
+# def nn() {
+
+# }
+
+# def svc() {
+# 	svc = svm.SVC(gamma=0.0000001, C=500)
+#     svc.fit(train_x, train_y)
+#     return svc, svc.score(test_x, test_y)
+# }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# THIS IS OLD AND UNUSED ALGORITHMS USED FOR REFERENCE
+#-----------------------------------------------------------------------------------------------
+
+
 def rf(train_X, train_y, test_X, test_y):
 	n_estimators = 1600
 	max_depth = 30
