@@ -26,6 +26,13 @@ import copy
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_auc_score, roc_curve, auc, plot_roc_curve
 from sklearn.preprocessing import StandardScaler, Normalizer, RobustScaler, MinMaxScaler
 from collections import deque
+import seaborn as sns
+import warnings
+import xgboost as xgb
+from xgboost import XGBClassifier
+from xgboost import cv
+from sklearn.model_selection import train_test_split
+warnings.filterwarnings('ignore')
 SEQ_LEN = 10
 EXTRACTED_FEATURE_SEQ_LEN = 200
 EPOCHS = 1
@@ -310,6 +317,70 @@ def ml_process(df, target):
 #     svc.fit(train_x, train_y)
 #     return svc, svc.score(test_x, test_y)
 # }
+
+
+def xGBoost():
+	data = 'C:/datasets/Wholesale customers data.csv'
+	df = pd.read_csv(data)
+	df.shape
+	df.head()
+	df.info()
+	df.describe()
+	df.isnull().sum()
+	X = df.drop('Channel', axis=1)
+
+	y = df['Channel']
+	X.head()
+	y.head()
+	data_dmatrix = xgb.DMatrix(data=X,label=y)
+
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
+
+	# declare parameters
+	params = {
+            'objective':'binary:logistic',
+            'max_depth': 4,
+            'alpha': 10,
+            'learning_rate': 1.0,
+            'n_estimators':100
+    }
+            
+            
+            
+	# instantiate the classifier 
+	xgb_clf = XGBClassifier(**params)
+
+
+
+	# fit the classifier to the training data
+	xgb_clf.fit(X_train, y_train)
+
+	print(xgb_clf)
+
+	# make predictions on test data
+	y_pred = xgb_clf.predict(X_test)
+
+	# check accuracy score
+	from sklearn.metrics import accuracy_score
+
+	print('XGBoost model accuracy score: {0:0.4f}'. format(accuracy_score(y_test, y_pred)))
+
+
+	
+	params = {"objective":"binary:logistic",'colsample_bytree': 0.3,'learning_rate': 0.1,
+                'max_depth': 5, 'alpha': 10}
+
+	xgb_cv = cv(dtrain=data_dmatrix, params=params, nfold=3,
+                    num_boost_round=50, early_stopping_rounds=10, metrics="auc", as_pandas=True, seed=123)
+
+	xgb_cv.head()
+
+	xgb.plot_importance(xgb_clf)
+	plt.rcParams['figure.figsize'] = [6, 4]
+	plt.show()
+
+	
+
 
 
 
