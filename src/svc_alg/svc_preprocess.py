@@ -63,6 +63,9 @@ class preprocess:
         
         X = df.iloc[:,0:5].values
         Y = df.iloc[:, 5].values
+        
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, Y, test_size = 0.2)
+        
         return X, Y
     
 if __name__ == "__main__":
