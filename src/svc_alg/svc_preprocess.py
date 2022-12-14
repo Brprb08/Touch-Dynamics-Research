@@ -70,7 +70,7 @@ class preprocess:
     
 if __name__ == "__main__":
     process_pubg = preprocess()
-    process.getData(save=True, path="../../pubg_raw/pubg*_touch.csv", save_path="./pubg_all_touch.csv")
+    process_pubg.getData(save=True, path="../../pubg_raw/pubg*_touch.csv", save_path="./pubg_all_touch.csv")
     
     process_diep = preprocess()
-    process.getData(save=True, path="../../diep_raw/diep*_touch.csv", save_path="./diep_all_touch.csv")
+    process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", save_path="./diep_all_touch.csv")
