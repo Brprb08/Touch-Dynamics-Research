@@ -60,7 +60,7 @@ def main():
             if len(prev_data) == SEQ_LEN:
                 temp = np.copy(prev_data)
                 temp = temp.astype(float)
-                for j in range(6, 14):
+                for j in range(6, 13):
                     temp[0, j] = 0
 
                 mean_touch_major = temp[1:, 2].mean()
