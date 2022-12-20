@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 def main():
-    path = 'C:\\Users\\pelto\\OneDrive\\Desktop\\Research Code\\pubg_raw'
+    path = './'
     filelist = [file for file in os.listdir(path) if file.endswith('.csv')]
     usrID = 1
     for file in filelist:
