@@ -18,7 +18,7 @@ class svc_model:
 if __name__ == "__main__":
     #Directory for csv files
     processor: preprocess = preprocess()
-    processor.openData("pubg_all_touch.csv")
+    processor.openData("pubg_firstTwo_touch.csv")
     session: svc_model = svc_model(processor)
     session.train()
     

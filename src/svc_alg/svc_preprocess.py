@@ -44,8 +44,8 @@ class preprocess:
         if show:    
             plt.show()
 
-    def getData(self, save: bool = False, path: str = "", save_path: str = "./data.csv"):
-        dfs = [self.__createDf(path_incomplete=path, user=(i+1)) for i in range(15)]
+    def getData(self, save: bool = False, path: str = "", myRange: int = 15, save_path: str = "./data.csv"):
+        dfs = [self.__createDf(path_incomplete=path, user=(i+1)) for i in range(myRange)]
         df_all = pd.concat(dfs)
 
         X = df_all.iloc[:,0:5].values
@@ -74,3 +74,9 @@ if __name__ == "__main__":
     
     process_diep = preprocess()
     process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", save_path="./diep_all_touch.csv")
+    
+    process_pubg = preprocess()
+    process_pubg.getData(save=True, path="../../pubg_raw/pubg*_touch.csv", range=2, save_path="./pubg_firstTwo_touch.csv")
+    
+    process_diep = preprocess()
+    process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", range=2, save_path="./diep_firstTwo_touch.csv")
