@@ -76,7 +76,7 @@ if __name__ == "__main__":
     process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", save_path="./diep_all_touch.csv")
     
     process_pubg = preprocess()
-    process_pubg.getData(save=True, path="../../pubg_raw/pubg*_touch.csv", range=2, save_path="./pubg_firstTwo_touch.csv")
+    process_pubg.getData(save=True, path="../../pubg_raw/pubg*_touch.csv", myRange=2, save_path="./pubg_firstTwo_touch.csv")
     
     process_diep = preprocess()
-    process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", range=2, save_path="./diep_firstTwo_touch.csv")
+    process_diep.getData(save=True, path="../../diep_raw/diep*_touch.csv", myRange=2, save_path="./diep_firstTwo_touch.csv")
