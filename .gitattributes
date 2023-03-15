@@ -1,3 +1,4 @@
 snake_appended/sub10_combined.csv filter=lfs diff=lfs merge=lfs -text
 snake_appended/*.csv filter=lfs diff=lfs merge=lfs -text
 snake_appended/Sub12_combined.csv filter=lfs diff=lfs merge=lfs -text
+mc_appended/*.csv filter=lfs diff=lfs merge=lfs -text
