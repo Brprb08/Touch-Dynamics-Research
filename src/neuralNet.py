@@ -95,37 +95,3 @@ for i in range(1,16):
      print("Confusion Matrix:")
      print(confusion_matrix(test_labels, test_predictions))
 
-
-# Plot the ROC curve
-#fpr, tpr, thresholds = roc_curve(test_labels, test_predictions)
-#roc_auc = auc(fpr, tpr)
-#plt.figure()
-#lw = 2
-#plt.plot(fpr, tpr, color='darkorange',
-#lw=lw, label='ROC curve (area = %0.2f)' % roc_auc)
-#plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
-#plt.xlim([0.0, 1.0])
-#plt.ylim([0.0, 1.05])
-#plt.xlabel('False Positive Rate')
-#plt.ylabel('True Positive Rate')
-#plt.title('Receiver operating characteristic')
-#plt.legend(loc="lower right")
-#plt.show()
-
-
-# Get the weights of the first layer
-#weights_layer1 = model.layers[0].get_weights()[0]
-
-# Calculate the feature importance as the sum of the absolute weights across all neurons
-#feature_importance = np.sum(np.abs(weights_layer1), axis=1)
-
-# Normalize the feature importance
-#feature_importance /= np.sum(feature_importance)
-
-# Plot the feature importance
-#plt.figure()
-#plt.bar(range(len(feature_importance)), feature_importance)
-#plt.xlabel('Feature Index')
-#plt.ylabel('Normalized Feature Importance')
-#plt.title('Feature Importance')
-#plt.show()
