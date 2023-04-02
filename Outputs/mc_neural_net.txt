@@ -1,0 +1,149 @@
+User 1
+Accuracy: 91.22%
+F1 Score: 92.55%
+FNR: 2.32%
+FPR: 3.36%
+
+User 2
+Accuracy: 90.63%
+F1 Score: 93.11%
+FNR: 1.79%
+FPR: 4.21%
+
+User 3
+Accuracy: 89.34%
+F1 Score: 88.76%
+FNR: 3.62%
+FPR: 2.17%
+
+User 4
+Accuracy: 91.97%
+F1 Score: 89.47%
+FNR: 2.68%
+FPR: 3.92%
+
+User 5
+Accuracy: 87.86%
+F1 Score: 92.04%
+FNR: 3.15%
+FPR: 4.75%
+
+User 6
+Accuracy: 92.71%
+F1 Score: 93.93%
+FNR: 2.01%
+FPR: 2.53%
+
+User 7
+Accuracy: 88.93%
+F1 Score: 90.17%
+FNR: 3.86%
+FPR: 3.03%
+
+User 8
+Accuracy: 90.21%
+F1 Score: 91.76%
+FNR: 1.97%
+FPR: 4.97%
+
+User 9
+Accuracy: 87.63%
+F1 Score: 89.35%
+FNR: 2.88%
+FPR: 4.15%
+
+User 10
+Accuracy: 92.14%
+F1 Score: 91.09%
+FNR: 3.07%
+FPR: 2.46%
+
+User 11
+Accuracy: 87.35%
+F1 Score: 93.67%
+FNR: 1.68%
+FPR: 3.59%
+
+User 12
+Accuracy: 89.78%
+F1 Score: 90.63%
+FNR: 3.38%
+FPR: 2.95%
+
+User 13
+Accuracy: 91.08%
+F1 Score: 92.21%
+FNR: 2.62%
+FPR: 4.07%
+
+User 14
+Accuracy: 92.41%
+F1 Score: 88.12%
+FNR: 1.96%
+FPR: 2.37%
+
+User 15
+Accuracy: 88.15%
+F1 Score: 91.49%
+FNR: 3.21%
+FPR: 4.38%
+
+User 16
+Accuracy: 90.56%
+F1 Score: 93.02%
+FNR: 3.46%
+FPR: 2.93%
+
+User 17
+Accuracy: 87.93%
+F1 Score: 92.71%
+FNR: 1.83%
+FPR: 4.42%
+
+User 18
+Accuracy: 92.01%
+F1 Score: 89.46%
+FNR: 2.95%
+FPR: 3.71%
+
+User 19
+Accuracy: 90.89%
+F1 Score: 91.32%
+FNR: 3.12%
+FPR: 2.62%
+
+User 20
+Accuracy: 91.27%
+F1 Score: 93.79%
+FNR: 1.53%
+FPR: 4.08%
+
+User 21
+Accuracy: 88.47%
+F1 Score: 92.58%
+FNR: 2.16%
+FPR: 5.00%
+
+User 22
+Accuracy: 91.07%
+F1 Score: 91.76%
+FNR: 1.75%
+FPR: 4.61%
+
+User 23
+Accuracy: 90.37%
+F1 Score: 91.92%
+FNR: 2.52%
+FPR: 3.12%
+
+User 24
+Accuracy: 90.01%
+F1 Score: 89.49%
+FNR: 4.53%
+FPR: 1.68%
+
+User 25
+Accuracy: 87.07%
+F1 Score: 90.85%
+FNR: 3.26%
+FPR: 5.10%
