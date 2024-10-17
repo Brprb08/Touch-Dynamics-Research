@@ -74,9 +74,3 @@ python nn.py
 ## Research Summary
 
 Touch dynamics can provide a robust biometric for user authentication. Our study showed that the way users interact with a touchscreen (swiping, tapping, and pressing) can effectively distinguish between legitimate users and imposters. Our research utilized three machine learning models, and the Neural Network performed best with a 93% accuracy. These findings suggest that touch dynamics could be a useful secondary authentication method for securing mobile devices.
-
-## Contributing
-If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Suggestions for improving the models or expanding the feature extraction methods are especially welcome!
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
