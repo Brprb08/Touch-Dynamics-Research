@@ -61,7 +61,7 @@ python preprocess.py
 ```
 This script will calculate features such as speed, acceleration, jerk, and angular velocity, and save the processed data to CSV files for each user.
 
-2. **Training a Model**: To train one of the machine learning models (Neural Network, XGBoost, or SVM), use the respective script (`nn.py`, `x.py`, or `s.py`). These scripts will split the data into training and testing sets, train the model, and output performance metrics like accuracy, precision, recall, and ROC-AUC scores.
+2. **Training a Model**: To train one of the machine learning models (Neural Network, XGBoost, or SVM), use the respective script (`nn.py`, `xgb.py`, or `svc.py`). These scripts will split the data into training and testing sets, train the model, and output performance metrics like accuracy, precision, recall, and ROC-AUC scores.
 
 ```bash
 python nn.py
@@ -73,4 +73,4 @@ python nn.py
 
 ## Research Summary
 
-Touch dynamics can provide a robust biometric for user authentication. Our study showed that the way users interact with a touchscreen (swiping, tapping, and pressing) can effectively distinguish between legitimate users and imposters. Our research utilized three machine learning models, and the Neural Network performed best with a 93% accuracy. These findings suggest that touch dynamics could be a useful secondary authentication method for securing mobile devices.
+Touch dynamics can provide a lot of information for user authentication. Our study showed that the way users interact with a touchscreen (swiping, tapping, and pressing) can effectively distinguish between legitimate users and imposters. Our research utilized three machine learning models, and the Neural Network performed best with a 93% accuracy. These findings suggest that touch dynamics could be a useful secondary authentication method for securing mobile devices.
